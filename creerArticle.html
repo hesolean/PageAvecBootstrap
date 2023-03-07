@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"> defer</script>
+    <title>Créer un article</title>
+</head>
+<body>
+    <!-- fil d'ariane-->
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home page</a></li>
+            <li class="breadcrumb-item active">Créer un article</li>
+        </ol>
+    </nav>
+    <!-- corps de page-->
+    <main class="container-lg">
+        <section class="row gy-3 justify-content-between">
+            <p class="text-center text-primary">Sur cette page, vous pouvez rédiger un nouvel article qui sera publié dans les actualités de l'asso RDJ.</p>
+            <!-- partie composition de l'article-->
+            <div class="col-8 bg-body-secondary" style="height: auto; width: auto; border: 1px solid black">
+                <p class="h2 text-center text-primary mb-5">Ajouter un titre à votre article</p>
+                <p class="h2 text-center text-primary mb-5">Ajouter un sous-titre</p>
+                <p class="h2 text-center text-primary mb-5">Ajouter le contenu de votre article</p>
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <p class="h2 text-center text-primary mb-5">Ajouter une image</p>
+                        <!-- insertion d'un bouton qui renvoie vers l'explorateur pour aller chercher l'image dans le disque dur-->
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-5">
+                            <button type="button" class="btn btn-outline-primary ">Image</button>
+                        </div>
+                        <!-- placer l'image dans <figure class="figure"></figure>-->
+                        <!-- ajouter la class="img-fluid"pour que la largeur de l'image s'adapte à la largeur du conteneur dans lequel elle se situe-->
+                        <!-- ajouter également "rounded" pour arrondir les coins de l'image-->
+                        <!-- ajouter d-none d-md-block pour supprimer les images sur les petits écrans mais apparaissent sur les écrans plus grands-->
+                    </div>
+                    <article class="col-12  col-sm-6">
+                        <p class="h2 text-center text-primary mb-5">Ajouter la légende de l'image</p>
+                        <!-- ajouter <figcaption class="figure-caption text-end"></figcaption> pour la légende de l'image-->
+                    </article>
+                </div>
+            </div>
+            <!-- partie apperçu de l'article-->
+            <div class="col-12 bg-body-secondary" style="height: auto; width: auto; border: 1px solid black">
+                <!-- ajouter l'appercu de l'article au fur et à mesure que les sections sont renseignées-->
+                <p class="text-center text-primary">
+                    Apperçu de l'article
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
